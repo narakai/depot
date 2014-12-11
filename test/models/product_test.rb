@@ -47,6 +47,8 @@ class ProductTest < ActiveSupport::TestCase
     end
   end
 
+# D:\Ruby\depot\test\fixtures\products.yml created database for ruby
+
   test "product is not valid without a unique title" do
     product = Product.new(title:       products(:ruby).title,
                           description: "yyy", 
